@@ -69,13 +69,37 @@
   <input type="text" id="class_name" name="class_name"><br>
   <label for="t_name">Teacher name:</label><br>
   <input type="text" id="t_name" name="t_name"><br><br>
-  <input type="submit" value="Submit"> 
+  <label for="sub">Choose a subject:</label>
+  <select id="sub" name="sub">
+    <option value="math">Math</option>
+    <option value="English">English</option>
+    <option value="Computer Science" selected>Computer Science</option>
+    <option value="Science">Science</option>
+  </select>
+  <br>
+  <br>
+   <input type="submit" value="Submit"> 
 </form>
+<br>
 
-<audio controls autoplay muted>
-  <source src="horse.ogg" type="audio/ogg">
-  <source src="horse.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
+
+<button onclick="showAlertWithDateTime()">Show Date and Time</button>
+<script>
+function showAlertWithDateTime() {
+  const now = new Date(); 
+  alert("Current Date and Time: " + now); 
+}
+</script>
+
+<br>
+<br>
+<br>
+
+<audio autoplay loop>
+  <source src="pink_and_white.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
 </audio>
+
+
 
 </html>
